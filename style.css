@@ -1,0 +1,130 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background:linear-gradient(to right, #2193b0, #6dd5ed);
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px;
+    color: #e54394;
+}
+
+
+/* intro and welcome part */
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro p{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* ok button */
+#startGame {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#startGame:hover {
+    background-color: #2bc093;
+}
+
+
+/* tic tac toc all div parts */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.box {
+    width: 90px;
+    height: 90px;
+    background-color: #34495e;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    color: #ecf0f1;
+    transition: background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #1abc9c;
+    cursor: pointer;
+}
+
+
+/* for reset Button and new game Button */
+#reset, #newgame {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #e74c3c;
+    color: #ecf0f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset:hover, #newgame:hover {
+    background-color: #0992c9;
+    cursor: pointer;
+}
+
+
+/* Winner message container parts */
+#msg {
+    font-size: 2rem;
+    color: #f1c40f;
+}
+
+.msg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
